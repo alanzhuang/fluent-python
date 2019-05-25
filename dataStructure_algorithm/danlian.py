@@ -69,5 +69,4 @@ if __name__ == '__main__':
     print(len(a))
     print(a.travel())
     a.reverse()
-    print(len(a))
     print(a.travel())
