@@ -1,4 +1,4 @@
-# 插入排序
+# 插入排序 O(n^2)
 
 def InsertSort(myList):
     # 获取列表长度
