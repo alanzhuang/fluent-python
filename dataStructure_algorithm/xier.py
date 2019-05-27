@@ -1,4 +1,4 @@
-# 希尔排序
+# 希尔排序 O(n^(1.3—2)) 和增量因子有关
 # https://blog.csdn.net/weixin_37818081/article/details/79202115
 import random
 import time
