@@ -1,4 +1,4 @@
-# 堆排序 时间复杂度O(nlog2n)
+# 堆排序 时间复杂度O(nlogn)
 # https://www.cnblogs.com/0zcl/p/6737944.html
 def swap(a, b):
     temp = a
