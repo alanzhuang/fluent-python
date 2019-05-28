@@ -6,7 +6,6 @@ import time
 
 def insertion_sort(list, step):
     '''插入排序'''
-    # 类似冒泡排序
     for i in range(step, len(list)):
         for j in range(i, step - 1, -step):
             if list[j] < list[j - step]:
