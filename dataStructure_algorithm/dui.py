@@ -13,7 +13,7 @@ def sift_down(array, start, end):
         if left_child > end:
             break
         if left_child + 1 <= end and array[left_child + 1] > array[left_child]:
-            left_child += 1
+            left_child += 1 # 左右子节点比较一下，大的和父节点再去比
         if array[left_child] > array[start]:  # 当左右孩子的最大值大于父结点时，则交换
             array[left_child], array[start] = swap(array[left_child], array[start])
             start = left_child  # 交换之后以交换子结点为根的堆可能不是大顶堆，需重新调整
