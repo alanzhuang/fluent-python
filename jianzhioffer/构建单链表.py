@@ -50,14 +50,14 @@ class SingleLink(object):
 
     # 单链反转 画单链图有助于理解
     def reverse(self):
-        L, M, R = None, None, self.__head
-        while R.next is not None:
+        L, M = None, self.__head
+        while M is not None:
+            R = M.next
+            M.next = L
             L = M
             M = R
-            R = R.next
-            M.next = L
-        R.next = M
-        self.__head = R
+        # R.next = M
+        self.__head = L
 
 
 if __name__ == '__main__':
