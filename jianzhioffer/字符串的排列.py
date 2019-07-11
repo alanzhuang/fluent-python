@@ -1,5 +1,4 @@
 # 输入任一字符串，输出所有的组合
-
 class Solution:
     def Permutation(self, ss):
         # write code here
@@ -9,7 +8,7 @@ class Solution:
             return list(ss)
         pStr = []
         charlist = list(ss)
-        charlist.sort()
+        # charlist.sort()
 
         for i in range(len(charlist)):
             if i > 0 and charlist[i] == charlist[i - 1]:
@@ -21,4 +20,4 @@ class Solution:
 
 
 s = Solution()
-print(s.Permutation('abdfg'))
+print(s.Permutation('abd'))
