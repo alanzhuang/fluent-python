@@ -28,6 +28,8 @@ def merge(a, b):
     else:
         for i in a[j:]:
             c.append(i)
+        for i in a[j + 1:]:
+            count += h
     print(c)
     print(count)
     return c
@@ -45,6 +47,7 @@ def merge_sort(lists):
 
 if __name__ == '__main__':
     count = 0
-    a = [14, 7, 8, 3, 5, 9]
+    a = [3, 7, 8, 2, 4, 1]
+    # a = [14, 7, 8, 3, 5, 9]
     print(merge_sort(a))
     print(count)
