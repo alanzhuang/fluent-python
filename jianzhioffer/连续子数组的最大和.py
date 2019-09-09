@@ -13,6 +13,6 @@ def test(s):
     return cur_max
 
 
-myList = [-1, -3, -3]
+myList = [-3, -1, -3]
 sss = test(myList)
 print(sss)

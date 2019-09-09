@@ -24,8 +24,9 @@ def get_max2(arr, rows, cols):
             if i > 0:
                 up = arr2[i - 1][j]
             if j > 0:
-                left = arr2[j][j - 1]
+                left = arr2[i][j - 1]
             arr2[i][j] = max(up, left) + arr[i][j]
+        print(arr2)
     return arr2[rows - 1][cols - 1]
 
 
@@ -45,5 +46,6 @@ def get_max3(arr, rows, cols):
 
 
 myList = [[1, 10, 3, 8], [12, 2, 9, 6], [5, 7, 4, 11], [3, 7, 16, 5]]
+# 使用get_max---》 get_max(myList, 3, 3)
 sss = get_max3(myList, 4, 4)
 print(sss)
